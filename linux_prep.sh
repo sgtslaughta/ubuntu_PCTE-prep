@@ -9,7 +9,7 @@ YELLOW='\033[1;33m'
 # Add any apt based package installs under this function
 apt-install() {
 	printf "\n${GREEN}[+]${NC} ${CYAN}RUNNING APT INSTALLS ${NC} \n\n"
-	apt update && apt upgrade -y
+	apt update && apt full-upgrade -y
 	apt install conky-all python3-pip vim net-tools openssh-server gnome-tweaks libtinfo5 libreadline5 -y
 }
 
